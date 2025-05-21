@@ -15,6 +15,8 @@ with
 
         from `trading-data-378602.Finance.Tesla_Finance`
 
+        group by 1
+
     )
 
 select *
