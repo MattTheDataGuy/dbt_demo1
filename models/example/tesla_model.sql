@@ -10,10 +10,13 @@
 with
     source_data as (
 
-        select shortname, 
+        SELECT 
+        shortname, 
         count(distinct exchange) as total_exchanges
 
         from `trading-data-378602.Finance.Tesla_Finance`
+
+        group by 1
 
     )
 
